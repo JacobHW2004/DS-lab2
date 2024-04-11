@@ -27,3 +27,6 @@ stages:
         dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
         tags: |
           $(tag)
+    - script: |
+        echo This is a customisation test
+        displayName: 'All done!'
